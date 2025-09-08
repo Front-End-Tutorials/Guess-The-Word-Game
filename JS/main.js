@@ -23,15 +23,15 @@ console.log(randomWord);
 
 
 changeWord.onclick = ()=>{
-    randomWord = words[Math.floor(Math.random() * words.length)].toUpperCase();
-    createTryElement()
     correctChar = 0;
     numberOfInputWritten = 0;
     nextFormIndex = 1;
     currentForm = 0;
     NumberOfHint = 2;
-    inputFoucs(1)
     hint.textContent = `${NumberOfHint} Hint`;
+    randomWord = words[Math.floor(Math.random() * words.length)].toUpperCase();
+    createTryElement()
+    inputFoucs(1)
 }
 
 
@@ -129,9 +129,7 @@ function inputFoucs(numberOfForm){
 }
 
 hint.addEventListener("click", giveHint);
-hint.addEventListener("touchstart", giveHint);
-
-
+// hint.addEventListener("touchstart", giveHint);
 
 function giveHint() {
     let inputsInCurrentForm = Array.from(allForms[currentForm].querySelectorAll("input"));
