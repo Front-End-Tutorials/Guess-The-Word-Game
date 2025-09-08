@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #e9e8e8;
+}
+
+.key-box{
+    width: 20px;
+    height: 20px;
+}
+
+.change-word{
+    width: 65%;
+}
+.hint{
+    width: 33%;
+}
+.form-control {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+.form-control:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.dis-text{
+    color: rgba(0, 0, 0, 0.359);
+}
+
+@media screen and (max-width: 600px) {
+    .main-section{
+        width: 100% !important;
+    }
+    .form-control {
+        font-size: 24px;
+    }
+}
+
+

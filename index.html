@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <Header class="d-flex justify-content-center align-items-center p-3 bg-white"><h1>Guess The Word Game</h1></Header>
+
+    <div class="main-section row w-75 m-auto mt-5">
+        <div class="col-lg-6 p-3">
+            <div class="try-section w-100">
+            </div>
+            <div class="buttons d-flex justify-content-between">
+                <button class="change-word btn btn-danger">Change Word</button>
+                <button class="hint btn btn-success">2 Hint</button>
+            </div>
+        </div>
+        <div class="col-lg-6 p-3 mt-5">
+            <p class="fw-bold text-center fs-5">Key Colors</p>
+            <div class="d-flex justify-content-start align-items-center gap-2 p-2 bg-white m-2">
+                <span class="key-box  bg-warning d-inline-block"></span>
+                <span class="fw-bold">Letter is Right And in Place</span>
+            </div>
+            <div class="d-flex justify-content-start align-items-center gap-2 p-2 bg-white m-2">
+                <span class="key-box  bg-success d-inline-block"></span>
+                <span class="fw-bold">Letter is Right But Not in Place</span>
+            </div>
+            <div class="d-flex justify-content-start align-items-center gap-2 p-2 bg-white m-2">
+                <span class="key-box bg-black d-inline-block"></span>
+                <span class="fw-bold">Letter is Wrong And Not Exists in Word </span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
