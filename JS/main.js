@@ -127,22 +127,6 @@ function inputFoucs(numberOfForm){
     })
 }
 
-// hint.addEventListener("click",()=>{
-//     let inputsInCurrentForm = Array.from(allForms[currentForm].querySelectorAll("input"))
-//     let rondomIndex = Math.floor(Math.random() * 6);
-//     inputsInCurrentForm.forEach((input)=>{
-//         if(parseInt(input.id) === rondomIndex && NumberOfHint > 0){
-//             input.value = randomWord.charAt(rondomIndex).toUpperCase();
-//             input.style.backgroundColor = "orange";
-//             NumberOfHint--;
-//             hint.textContent = `${NumberOfHint} Hint`
-//             if(NumberOfHint === 0){
-//                 hint.textContent = `No Hint`
-//             }
-//         }
-//     })
-// })
-
 hint.addEventListener("click", giveHint);
 hint.addEventListener("touchstart", giveHint);
 
