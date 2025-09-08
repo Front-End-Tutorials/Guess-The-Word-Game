@@ -63,7 +63,7 @@ document.addEventListener("click",(e)=>{
                 numberOfInputWritten++
                 e.target.disabled = true
                 if(randomWord.includes(`${e.target.value.toUpperCase()}`)){
-                    if(randomWord.indexOf(`${e.target.value.toUpperCase()}`) == parseInt(e.target.id)){
+                    if(randomWord.charAt(parseInt(e.target.id)).toUpperCase() == e.target.value.toUpperCase()){
                         e.target.style.backgroundColor = "orange";
                         correctChar++;
                     }else{
