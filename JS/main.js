@@ -29,8 +29,9 @@ changeWord.onclick = ()=>{
     numberOfInputWritten = 0;
     nextFormIndex = 1;
     currentForm = 0;
-    console.log(randomWord);
+    NumberOfHint = 2;
     inputFoucs(1)
+    hint.textContent = `${NumberOfHint} Hint`;
 }
 
 
@@ -130,16 +131,16 @@ function inputFoucs(numberOfForm){
 hint.addEventListener("click", giveHint);
 hint.addEventListener("touchstart", giveHint);
 
+
+
 function giveHint() {
     let inputsInCurrentForm = Array.from(allForms[currentForm].querySelectorAll("input"));
     let randomIndex = Math.floor(Math.random() * 6);
-
     inputsInCurrentForm.forEach((input) => {
         if (parseInt(input.id) === randomIndex && NumberOfHint > 0) {
             input.value = randomWord.charAt(randomIndex).toUpperCase();
             input.style.backgroundColor = "orange";
             NumberOfHint--;
-
             hint.textContent = NumberOfHint > 0 ? `${NumberOfHint} Hint` : `No Hint`;
         }
     });
